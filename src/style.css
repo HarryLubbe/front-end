@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+    color: maroon;
+    text-decoration: unset;
+}
+
+ul {
+    margin-left: 1.5rem;
+    list-style: none;
+}
+
+button,
+input[type="submit"] {
+    border: none;
+    background: none;
+    color: unset;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, el {
+    margin: 1em 0;
+}
+
+.page {
+    padding: 1rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#header {
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: gray;
+}
+#header .title{
+    margin: 0;
+    padding: 0 1rem;
+    color: white;
+}
+
+#header .auth-options {
+    display: flex;
+    height: 100%;
+}
+#header .auth-options button{
+    background-color: rgb(228, 13, 13);
+    padding: 0 1rem;
+    color: white;
+    font-size: 1.1rem;
+}
+#header .auth-options button:hover{
+    background-color: rgb(248, 69, 69);
+}
+
+.form label,
+.form input
+{
+    display: block;
+}
+
+.form input {
+    margin-bottom: 1rem;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"] {
+    width: 100%;
+    padding: 0.3rem;
+    font-size: 1.1rem;
+}
+.form input:focus {
+    border: 1px solid lightskyblue;
+    outline: none;
+}
+.form input[type="submit"] {
+    border: 1px solid;
+    background-color: lightskyblue;
+    padding: 0.3rem 0.5rem;
+}
+
+@media screen and (max-width: 550px) {
+    #header title {
+        font-size: 1.2rem;
+    }
+    #header .auth-options button {
+        font-size: 1rem;
+    }
+}
+
